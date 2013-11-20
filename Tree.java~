@@ -1,0 +1,13 @@
+package hw11;
+
+public class Tree {
+  
+  Node root;
+  Node left;
+  Node right;
+  
+  public Tree() {
+    
+  }
+  
+}
