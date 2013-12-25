@@ -2,15 +2,13 @@ package hw11;
 
 public class Node {
   
-  Object num;
-  Node leftNode;
-  Node rightNode;
+  public int data;
+  public Node leftNode;
+  public Node rightNode;
   
-  public Node(Object num, Node leftNode, Node rightNode) {
+  public Node(int data) {
     
-    this.num = num;
-    this.setLeft(leftNode);
-    this.setRight(rightNode);
+    this.data = data;
     
   }
   
@@ -28,6 +26,10 @@ public class Node {
   
   public Node getRight() {
     return rightNode;
+  }
+  
+  public int getData() {
+    return data;
   }
   
 }

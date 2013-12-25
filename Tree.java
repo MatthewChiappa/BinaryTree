@@ -1,6 +1,4 @@
-package hw11;
-
-import java.util.Stack;
+package BinaryTree;
 
 public class Tree {
   
@@ -230,46 +228,5 @@ public class Tree {
   public Node getRootItem() {
     return root;
   }
-  
-  // maybe works
-  
-  public double median() {
-
-    int count = 0;
-    int median = 0;
     
-    boolean even;
-    if (size % 2 == 0)
-      even = true;
-    else 
-      even = false; 
-    
-    Node curr = root;
-    Stack<Node> stack = new Stack<Node>();
-    while(!stack.isEmpty( ) || curr != null) {
-      if (curr != null) {
-        stack.push(curr);
-        curr = curr.getLeft();
-      } 
-      else {
-        curr = stack.pop();
-        
-        if (even && count == (size/2) - 1) {
-          median = curr.getData();
-        } 
-        else if (count == size/2) {
-          median += curr.getData();
-          break;
-        }
-        
-        count++;                
-        curr = curr.getRight();
-      }
-    }
-    if (even)
-      return median / 2.0;
-    else
-      return median; 
-  }
-  
 }

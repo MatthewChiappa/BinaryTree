@@ -4,7 +4,7 @@
 // side. When the tree is printed inorder the numbers are printed
 // from smallest to greatest to show that the values of the tree 
 // have been put in the corrrect order.
-package hw11;
+package BinaryTree;
 
 import java.util.Scanner;
 
@@ -24,7 +24,6 @@ public class Main {
     tree.add(2);
     tree.add(100);
     //tree.delete(1002);
-    System.out.println(tree.median());
     System.out.println("");
     
     // printing the tree in every type of order
